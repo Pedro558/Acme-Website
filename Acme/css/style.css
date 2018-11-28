@@ -26,7 +26,12 @@ ul{
   background-color: #e8491d;
   color: #ffffff;
 }
-
+img{
+  margin: auto;
+}
+h3{
+  text-align: center;
+}
 /* Header */
 header{
   background: #35424a;
@@ -108,4 +113,19 @@ header nav a:hover{
   width: 250px;
   height: 25px;
   padding: 5px;
+}
+
+/* Boxes */
+#boxes div{
+  display: flex;
+  margin-top: 10px;
+}
+.box{
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#boxes p{
+  margin-top: 0;
 }
