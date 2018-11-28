@@ -26,12 +26,7 @@ ul{
   background-color: #e8491d;
   color: #ffffff;
 }
-img{
-  margin: auto;
-}
-h3{
-  text-align: center;
-}
+
 /* Header */
 header{
   background: #35424a;
@@ -116,16 +111,16 @@ header nav a:hover{
 }
 
 /* Boxes */
-#boxes div{
-  display: flex;
-  margin-top: 10px;
+#boxes{
+  margin-top: 20px;
 }
-.box{
+#boxes .box{
   border: 1px solid blue;
-  display: flex;
-  flex-direction: column;
+  float: left;
+  width: 30%;
+  padding: 10px;
   text-align: center;
 }
-#boxes p{
-  margin-top: 0;
+#boxes .box img{
+  width: 90px;
 }
