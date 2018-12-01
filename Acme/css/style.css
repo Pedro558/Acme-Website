@@ -39,6 +39,9 @@ ul{
   margin-top: 5px;
   border-radius: 5px;
 }
+p{
+  font-size: 16px;
+}
 /* Header */
 header{
   background: #35424a;
@@ -86,20 +89,20 @@ header nav a:hover{
 #showcase{
   min-height: 400px;
   background-image: url(https://i.imgur.com/xsKYHsJ.jpg);
-  background-position: 0% 45%;
+  background-position: 0 -400px;
   background-repeat: no-repeat;
   text-align: center;
   color: #ffffff;
 }
 #showcase h1{
   font-size: 55px;
-  margin: 100px auto 20px;
+  margin: 50px auto 20px;
 }
 #showcase p{
   color:#ffffff;
   font-size: 20px;
   text-align: center;
-  margin: 0px auto;
+  margin: 0px auto 20px;
 }
 
 /* Newsletter */
@@ -134,6 +137,7 @@ header nav a:hover{
 #boxes .box img{
   width: 90px;
 }
+
 /* Footer */
 footer{
   background: #e8491d;
@@ -157,12 +161,83 @@ footer{
 
 /* Services */
 #sidebar input[type="text"], #sidebar input[type="email"], #sidebar textarea{
-  width: 100%;
+  width: 95%;
   padding: 5px;
 }
 #sidebar form{
-  padding-right: 10px;
+  padding: 15px;
 }
 #sidebar button{
   width: 70px;
+}
+#sidebar form label{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width: 768px){
+  /*Header*/
+  header #branding, header nav, header li{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header{
+    padding-bottom: 20px; 
+  }
+
+  /*Newsletter*/
+  #newsletter form, #newsletter input[type="email"]{
+    float: none;
+    width: 100%
+  }
+
+  #newsletter h1{
+    text-align: center;
+    float: none;
+  }
+  #newsletter button{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /*Boxes*/
+  #boxes .box{
+    float:none;
+    width: 100%;
+  }
+
+  /*Main-col / Sidebar*/
+  #main-col, #sidebar{
+    float:none;
+    width: 100%;
+  }
+  #sidebar button{
+    width: 100%;
+    display: block;
+  }
+  #sidebar form label{
+    text-align: center;
+  }
+}
+
+@media(max-width: 418px){
+  #showcase h1{
+    font-size: 40px;
+  }
+  #showcase p{
+    font-size: 16px;
+  }
+  .box p{
+    padding-right: 20px;
+  }
 }
