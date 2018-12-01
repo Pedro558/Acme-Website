@@ -31,6 +31,13 @@ ul{
   color: #ffffff;
   padding: 15px;
   margin: 20px 0px 10px 0px;
+  border-radius: 5px;
+}
+.gray{
+  background-color: #e4e4e4;
+  padding: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 /* Header */
 header{
@@ -141,8 +148,21 @@ footer{
   width: 65%;
   float: left;
 }
+
 /* Sidebar */
 #sidebar{
   width: 30%;
   float: right;
+}
+
+/* Services */
+#sidebar input[type="text"], #sidebar input[type="email"], #sidebar textarea{
+  width: 100%;
+  padding: 5px;
+}
+#sidebar form{
+  padding-right: 10px;
+}
+#sidebar button{
+  width: 70px;
 }
